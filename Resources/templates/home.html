@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People Web</title>
+</head>
+<body>
+{{#person}}
+<a href="/person?id={{id}}">{{name}}</a>
+<input type="hidden" name="id" value="{{id}}"/>
+
+<br>
+{{/person}}
+
+{{#previousoption}}
+<a href="/?offset={{previous}}">Previous</a>
+{{/previousoption}}
+
+{{#nextoption}}
+<a href="/?offset={{next}}">Next</a>
+{{/nextoption}}
+</body>
+</html>
